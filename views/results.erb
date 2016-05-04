@@ -1,0 +1,9 @@
+<h1>Rock, Paper, Scissors</h1>
+
+<% if $results.class.name == "Array" %>
+<% $results.each do |result| %>
+	<h2><%= result %></h2>
+<% end %>
+<% else %>
+<h2><%= $results %></h2>
+<% end %>
