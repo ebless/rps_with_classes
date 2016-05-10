@@ -12,3 +12,8 @@
 
 	<input type="submit">
 </form>
+
+<% if session[:wins] || session[:losses] %>
+	<h3>Wins: <%= session[:wins] %></h3>
+	<h3>Losses: <%= session[:losses] %></h3>
+<% end %>
